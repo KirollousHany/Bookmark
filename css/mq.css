@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+  /* Title */
+  #title h1 {
+    font-size: 40px;
+  }
+
+  #title h1::before {
+    bottom: 15px;
+  }
+
+  #title h1:hover::before {
+    height: 40%;
+  }
+
+  /* Form */
+  #form {
+    border-top: 1px dotted var(--dark-color);
+    border-bottom: 1px dotted var(--dark-color);
+  }
+
+  #form h2 {
+    font-size: 20px;
+    margin: 0px auto 8px;
+  }
+
+  #form label {
+    font-size: 15px;
+  }
+
+  #form input {
+    font-size: 15px;
+  }
+
+  #form button {
+    font-size: 15px;
+  }
+
+  /* Table */
+  #bookmark-table th,
+  #bookmark-table td {
+    font-size: 14px;
+  }
+
+  #bookmark-table td a .visit-btn,
+  #bookmark-table td .delete-btn {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+
+}
+
