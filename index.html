@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Save and manage your favorite websites effortlessly. Add links, names, and descriptions for an organized and efficient bookmarking experience."
+    />
+    <!-- Title -->
+    <title>Bookmark Manager</title>
+    <!-- Link Tags -->
+    <link rel="shortcut icon" href="./images/favion.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!-- Title -->
+        <section id="title">
+          <h1 class="m-auto position-relative py-2">Bookmarker</h1>
+        </section>
+        <!-- Form -->
+        <section id="form" class="px-3 py-4">
+          <form class="d-flex flex-column gap-4">
+            <h2>
+              <i class="fa-solid fa-bookmark"></i>
+              Bookmark your favorite sites
+              <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div>
+              <label for="name" class="pb-2">
+                <i class="fa-solid fa-book-bookmark me-2"></i>
+                Site Name
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="nameInput"
+                placeholder="Bookmark Name"
+              />
+            </div>
+            <div>
+              <label for="siteUrl" class="pb-2">
+                <i class="fa-solid fa-link me-2"></i>
+                Site URL
+              </label>
+              <input
+                type="url"
+                class="form-control"
+                id="urlInput"
+                placeholder="Website URL"
+              />
+            </div>
+            <button
+              type="button"
+              onclick="checkValues()"
+              class="btn m-auto text-white px-5"
+            >
+              Submit
+            </button>
+          </form>
+        </section>
+        <!-- Table -->
+        <section id="bookmark-table">
+          <table class="table text-center my-4 bg-light">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="content"></tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
